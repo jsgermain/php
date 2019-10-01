@@ -8,7 +8,7 @@ $madame = ['nom' => 'Jean',
 ];
 
 // Pour  afficher son prenom
-echo $madame['prenom'];
+echo $madame['prenom']. ' '. $madame['nom'];
 
 
 ?>
