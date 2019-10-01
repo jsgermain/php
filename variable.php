@@ -4,8 +4,10 @@
 $nom = 'Jean';
 $prenom = 'Faby';
 
-// echo par concatenation entre deux variables string
-echo  $nom. " ".$prenom;
+// espace entre deux variables string
+echo  $nom. " ".$prenom.
+ "\n";
 
+echo "$nom $prenom";
 
 ?>
