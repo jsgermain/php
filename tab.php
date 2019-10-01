@@ -8,12 +8,12 @@ $madame = ['nom' => 'Jean',
 ];
 
 /*
-pour changer le nom de la personne
-on réupère la valeur de la variable et on assigne la nouvelle valeur
+pour ajouter une note à madame
+on réupère la valeur de la variable note, on ajoute la position et la nouvelle note
 */
-$madame['nom'] = 'Saint Germain';
+$madame['notes'][3] = 8;
 // Pour  afficher son prenom
-echo $madame['prenom']. ' '. $madame['nom'];
+echo $madame['notes'][3];
 
 
 ?>
