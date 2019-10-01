@@ -2,18 +2,32 @@
 /*
 clé  
 */
-$madame = ['nom' => 'Jean', 
-'prenom' => 'Faby', 
-'notes' => [10,15,14]
-];
+$enfant=
+[
+    [
+        'nom' => 'Saint Germain',
+        'prenom' => 'Sun John',
+        'num' => [13,04,2010]
+    ],
+    [
+        'nom' => 'Saint Germain',
+        'prenom' => 'Johnsky',
+        'num' => [5, 1, 2014]
+    ],
+    [
+        'nom' => 'Saint Germain',
+        'prenom' => 'Nordelyne',
+        'num' => [30, 12, 2015]
+    ],
 
-/*
-pour ajouter un élément dans le tableau
-sache qu'on peut ajouter une note sans donner sa position
-*/
-$madame[] = 'John';
-
-print_r ($madame);
+    [
+        'nom' => 'Saint Germain',
+        'prenom' => 'Simon-Johns',
+        'num' => [22, 6, 2019]
+    ]
+    ];
+// pour afficher le 22 dans le num de la quatrème enfant
+    echo $enfant[3]['num'][0];
 
 
 ?>
