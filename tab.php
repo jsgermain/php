@@ -1,12 +1,14 @@
 <?php
 /*
-creation de la variable
-chaque variable se separe par un virgule  
+clé  
 */
-$notes = [10, 15, 7, 9];
+$madame = ['nom' => 'Jean', 
+'prenom' => 'Faby', 
+'notes' => [10,15,14]
+];
 
-// Pour récupérer la troisième note du tableau
-echo $notes[2];
+// Pour  afficher son prenom
+echo $madame['prenom'];
 
 
 ?>
