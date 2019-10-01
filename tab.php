@@ -8,12 +8,12 @@ $madame = ['nom' => 'Jean',
 ];
 
 /*
-pour ajouter une note à madame
-on réupère la valeur de la variable note, on ajoute la position et la nouvelle note
+pour ajouter un élément dans le tableau
+sache qu'on peut ajouter une note sans donner sa position
 */
-$madame['notes'][3] = 8;
-// Pour  afficher son prenom
-print_r ($madame['notes']);
+$madame[] = 'John';
+
+print_r ($madame);
 
 
 ?>
