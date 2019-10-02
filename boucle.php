@@ -1,15 +1,10 @@
 <?php
-$chif = null;
+$notes=[15,20,13];
 
-echo "compter jusqu'à 10 \n"; 
-for($i=0; $i<=10; $i++) // on incrémente de 1
+// pour récupérer toutes les notes ou afficher l'ensemble des notes
+for($i=0; $i<3; $i++)
 {
-    echo " -$i \n";
-}
-echo "par deux \n";
-for($i=0; $i<=10; $i+=2) // on incrémente de 2
-{
-    echo " -$i \n";
+    echo "- $notes[$i] \n";
 }
 
 ?>
