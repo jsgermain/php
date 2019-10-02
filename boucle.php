@@ -1,9 +1,15 @@
 <?php
 $chif = null;
 
-while($chif !== 10)
+echo "compter jusqu'à 10 \n"; 
+for($i=0; $i<=10; $i++) // on incrémente de 1
 {
-    $chif = (int)readline("rentrer une valeur");
+    echo " -$i \n";
 }
-echo "Vous avez gagné";
+echo "par deux \n";
+for($i=0; $i<=10; $i+=2) // on incrémente de 2
+{
+    echo " -$i \n";
+}
+
 ?>
