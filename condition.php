@@ -1,11 +1,12 @@
 <?php
-$famille = 2;
+// demander à l'utilisateur de rentrer des données 
+$famille = readline("Combien d'enfant avez-vous ? ");
 
 if($famille>=3)
 {
-    echo "Vous êtes une famille nombreuse";
+    echo "Vous êtes bien une famille nombreuse";
 }
 else
-echo "Vous n'êtes pas une famille nombreuse";
+echo "Vous n'êtes donc pas une famille nombreuse";
 
 ?>
