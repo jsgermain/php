@@ -1,18 +1,21 @@
 <?php
 // demander à l'utilisateur de rentrer des données 
-$famille = (int)readline("Combien d'enfant avez-vous ? "); // on castre la valeur entrée en entier
-$res = 3-$famille;
+$feu = (int)readline("Taper 1: feu vert, 2: feu orange et 3 : feu rouge "); // on castre la valeur entrée en entier
 
-// condition plus élaboré
-if($famille > 3)
+if($feu===1)
 {
-    echo "Vous êtes bien une famille nombreuse";
+    echo  "On peut passer car le feu est vert";
 }
-elseif($famille === 3) // triple = pour tester une égalité
+elseif($feu===2)
 {
-    echo " Avec 3 enfants, vous êtes juste une famille nombreuse";
+    echo "Avancez prudemment, soyez prêt à arrêter car le feu est orange";
+}
+elseif($feu===3)
+{
+    echo "arretez, danger car le feu est rouge";
 }
 else
-echo "Vous n'êtes donc pas une famille nombreuse, il vous manque $res enfant";
-
+{
+    echo "Commande eronnée";
+}
 ?>
