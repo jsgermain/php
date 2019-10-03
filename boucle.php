@@ -1,13 +1,17 @@
 <?php
 $notes=[15,20,13];
 
-/* pour récupérer toutes les notes ou
- afficher l'ensemble des notes
- avec un foreach 
- */
-foreach($notes as $note)
+$eleves =
+[
+    'grande section' => 'Johnsky',
+    'moyenne section' => 'Nordelyne',
+    'ecole elementaire' => 'Sun John'
+];
+
+// Si on veut récupérer la clé (classe)
+foreach($eleves as $class => $eleve)
 {
-    echo "- $note \n";
+    echo "$eleve est dans la classe $class \n";
 }
 
 
