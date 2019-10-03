@@ -1,23 +1,41 @@
 <?php
-$notes=[15,20,13];
+/*  Demander à l'utilisateur de rentrer une note ou taper fin pour terminer
+chaque note est saugardée dans un tableau du style $notes[]
+on affiche le tableau de note sous forme de liste
 
-$eleves =
-[
-    'CNAM' => ['Maga','Souleymane', 'Johnes' ],
-    'Aston' => ['Darry', 'Mathias', 'Clément']
-];
+ALGO
+TANT QUE l'utilsateur ne tape pas 'fin'
+    On ajoute la note tapée au tableau
+POUR CHAQUE note DANS notes 
+    on affiche "- $note \n";
+*/
 
-// Si on veut afficher chaque école avec le nom de ses élèves
-foreach($eleves as $ecole => $lstEleve)
-{// on récupère le nom de l'école
-    echo "A l'ecole $ecole on y trouve\n"; // saut de ligne entre ecole et élève
+$notes = [];
+$action = null;
 
-    foreach($lstEleve as $eleve)
-    {//on récupère le nom de chaque élève dans la liste
-        echo "$eleve \n";//saut de ligne entre élève ecole 
+//TANT QUE l'utilsateur ne tape pas 'fin'
+while($action !== 'fin')
+{
+    $action = readline("Entrer une nouvelle note ou 'fin' pour terminer ");
+    // On ajoute la note tapée au tableau
+    if($action !== 'fin')
+    {
+        $notes[]= (int)$action;
     }
-    echo "\n"; // saut de ligne entre les blocs
+
+    // POUR CHAQUE note DANS notes 
+
+    foreach($notes as $note)
+    {
+        //on affiche "- $note \n";
+        echo " - $note \n";
+    }
+  
+
 }
+
+
+
 
 
 ?>
