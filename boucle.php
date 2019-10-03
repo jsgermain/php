@@ -3,15 +3,20 @@ $notes=[15,20,13];
 
 $eleves =
 [
-    'grande section' => 'Johnsky',
-    'moyenne section' => 'Nordelyne',
-    'ecole elementaire' => 'Sun John'
+    'CNAM' => ['Maga','Souleymane', 'Johnes' ],
+    'Aston' => ['Darry', 'Mathias', 'Clément']
 ];
 
-// Si on veut récupérer la clé (classe)
-foreach($eleves as $class => $eleve)
-{
-    echo "$eleve est dans la classe $class \n";
+// Si on veut afficher chaque école avec le nom de ses élèves
+foreach($eleves as $ecole => $lstEleve)
+{// on récupère le nom de l'école
+    echo "A l'ecole $ecole on y trouve\n"; // saut de ligne entre ecole et élève
+
+    foreach($lstEleve as $eleve)
+    {//on récupère le nom de chaque élève dans la liste
+        echo "$eleve \n";//saut de ligne entre élève ecole 
+    }
+    echo "\n"; // saut de ligne entre les blocs
 }
 
 
