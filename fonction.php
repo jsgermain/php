@@ -1,9 +1,10 @@
 <?php
 
 $mot=readline("Voulez-vous savoir si votre mot est un palyndrome, ben veuillez l'entrer ici :\n");
+
 $motInverser=strrev($mot);
 
-if($mot === $motInverser)
+if(strtolower($mot) === strtolower($motInverser))
 {
     echo "Ce mot est bien un palindrome";
 }
