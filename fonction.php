@@ -1,6 +1,6 @@
 <?php
 $notes = [20, 10, 13, 54, 5];
-sort($notes); // sert à organiser un tableau
+$notes[]=15;
 
 print_r($notes);
 
