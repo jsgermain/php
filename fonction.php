@@ -5,7 +5,7 @@ while(true)
     $mot = readline("Entrez votre mot : \n");
     if($mot=='')
     {
-        exit("Fin de programme"); // exit permet de forcer la sortie du programme
+        die("Fin de programme"); // die permet de forcer la sortie du programme
     }
     $motreverse = strtolower(strrev($mot));
     if(strtolower($mot) === $motreverse)
