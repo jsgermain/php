@@ -1,16 +1,14 @@
 <?php
+$notes = [15, 10, 13, 9];
 
-$mot=readline("Voulez-vous savoir si votre mot est un palyndrome, ben veuillez l'entrer ici :\n");
+$sum = array_sum($notes); // calcule la somme d'un tableau
+$taille = sizeof($notes); // calcule la taille d'un tableau 
+$count = count($notes); // compter le nombre d'élément d'un tableau 
 
-$motInverser=strrev($mot);
+$moy = $sum / $count;
 
-if(strtoupper($mot) === strtoupper($motInverser))
-{
-    echo "Ce mot est bien un palindrome";
-}
-else
-{
-    echo "ce mot n'est pas un palindrome";
-}
+echo "La moyenne de vos notes est $moy";
+
+
 
 ?>
