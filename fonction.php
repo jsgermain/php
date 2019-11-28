@@ -1,23 +1,14 @@
 <?php
 
-while(true)
-{
-    $mot = readline("Entrez votre mot : \n");
-    if($mot=='')
-    {
-        die("Fin de programme"); // die permet de forcer la sortie du programme
-    }
-    $motreverse = strtolower(strrev($mot));
-    if(strtolower($mot) === $motreverse)
-    {
-        echo " Ce mot est un palindrome \n";
-    }
-    else
-    {
-        echo " Ce mot n'est pas un palindrome\n";
-    }
-    
-}
+    $insultes=['merde', 'pute'];
+    $phrase=readline("Entrez une phrase :\n");
 
-
+    foreach($insultes as $insulte)
+    {
+        $phrase = str_replace($insulte,'****', $phrase);
+    }
+    echo $phrase;
+/*
+https://www.youtube.com/watch?v=UXdvpKRQsx8&list=PLjwdMgw5TTLVDv-ceONHM_C19dPW1MAMD&index=9
+*/
 ?>
