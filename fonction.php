@@ -6,9 +6,9 @@
 
     foreach($insultes as $insulte)
     {
-        $taille = strlen($insulte); /* sert à calculer la taille d'un mot */
-        $replace = str_repeat('*', $taille); /* sert à répeter * autant de la taille du mot */
-        $phrase = str_replace($insulte,$replace, $phrase);
+        $taille = strlen($insulte);
+        $asterisque = str_repeat('*', $taille); 
+        $phrase = str_replace($insulte,$asterisque, $phrase);
     }
     echo $phrase;
 /*
