@@ -1,12 +1,20 @@
 <?php
 /* ecrire ses propres fonctions */
 
-function bonjour($nom)
+function bonjour($nom = null) /* rend le paramètre optionnel */
 {
-    echo "Bonjour $nom \n";
+    if($nom === null)
+    {
+        echo "Bonjour \n";
+    }
+    else
+    {
+        echo "Bonjour $nom \n";
+
+    }
 }
 
-bonjour('Norane');
+bonjour();
 bonjour('Pierre');
 
 /*
