@@ -18,8 +18,14 @@ class InfoDateRenseigner
 test 
 $InfoDateRenseigner est une nouvelle intance de InfoDateRenseigner()
 */
-$InfoDateRenseigner = new InfoDateRenseigner('Lundi',5,'Septembre', 1988);
-var_dump($InfoDateRenseigner);
+$infoDateRenseigner1 = new InfoDateRenseigner('Lundi',05,'Septembre', 1992);
+$infoDateRenseigner2 = new InfoDateRenseigner('Lundi',07,'Novembre', 1992);
+var_dump(
+    $infoDateRenseigner1,
+    $infoDateRenseigner2 
+);
 
-?>
+
+
 /*https://www.youtube.com/watch?v=HUhjN12HZR0&list=PLjwdMgw5TTLVDv-ceONHM_C19dPW1MAMD&index=25&t=0s */
+?>
